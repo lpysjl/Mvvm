@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".app.main.view.MainActivity">
+    <FrameLayout
+            android:id="@+id/fl_show"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"></FrameLayout>
+
+    <RadioGroup android:layout_width="match_parent"
+                android:id="@+id/rg_main_navigation"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+        <RadioButton
+                android:id="@+id/rb_main_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_main_bottom_hemoicon"
+                android:textColor="@color/selecter_main_bottom_textcolor"
+                android:text="主页"/>
+        <RadioButton
+                android:id="@+id/rb_main_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_main_bottom_videoicon"
+                android:textColor="@color/selecter_main_bottom_textcolor"
+                android:text="视频"/>
+        <RadioButton
+                android:id="@+id/rb_main_duanzi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_main_bottom_duanziicon"
+                android:textColor="@color/selecter_main_bottom_textcolor"
+                android:text="段子"/>
+        <RadioButton
+                android:id="@+id/rb_main_my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_main_bottom_myicon"
+                android:textColor="@color/selecter_main_bottom_textcolor"
+                android:text="我的"/>
+    </RadioGroup>
+</LinearLayout>
